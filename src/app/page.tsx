@@ -1,95 +1,85 @@
+import { business } from "@/data";
 import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <main>
+        <div className="info">
+          <h1>
+            SALUD EN <br /> CONEXIÓN
+          </h1>
+          <Image
+            src="/img/logo_salud_en_conexion.png"
+            alt="logo salud en conexión"
+            width={180}
+            height={180}
+          />
+          <h2 className="membresia">MEMBRESÍA</h2>
+          <h3 className="beneficios">BENEFICIOS</h3>
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+        {business.map((company, index) => (
+          <div
+            key={index}
+            style={{
+              display: index % 2 === 0 ? "flex-end" : "flex-start",
+              width: "95%",
+              marginLeft: index % 2 === 0 ? "5%" : "0%",
+              marginRight: index % 2 === 0 ? "0%" : "5%",
+            }}
+            className={index % 2 === 0 ? "item-1 item" : "item-2 item"}
+          >
+            <Image
+              src={company.logoSrc}
+              alt={`logo ${company.name}`}
+              className="logo"
+              width={200}
+              height={200}
+            />
+            <div
+              className="item-info"
+              style={{
+                border: "5px dotted #81A969",
+                borderLeft: index % 2 === 0 ? "none" : "5px solid #81A969",
+                borderRight: index % 2 === 0 ? "5px solid #81A969" : "none",
+                margin: "25px 0",
+                paddingLeft: index % 2 === 0 ? "30px" : "15px",
+                paddingRight: index % 2 === 0 ? "15px" : "30px",
+              }}
+            >
+              <h4>{company.promotion}</h4>
+              <h5>{company.field}</h5>
+              <p>{company.description}</p>
+              <Link
+                href={`https://api.whatsapp.com/send?phone=${company.phoneNumber}&text=¡Hola!,%20Me%20gustaría%20aprovechar%20la%20promoción%20que%20ofrece.`}
+              >
+                <div className="whatsapp-btn">
+                  <p>Solicitar descuento</p>
+                  <i className="fa-brands fa-whatsapp"></i>
+                </div>
+              </Link>
+            </div>
+          </div>
+        ))}
+      </main>
+      <footer>
+        <div className="f-info">
+          <h6>SALUD EN CONEXIÓN</h6>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            ES UNA INCIATIVA DE EMPRESAS DEDICADAS A LA SALUD QUE SE ESFUERZAN
+            EN REALIZAR UNA DINAMICA INTEGRAL PARA OFRECER UNA OPCION ECONOMICA
+            Y DE LA MEJOR CALIDAD AL ALCANCE DE TODOS SUS PACIENTES
           </p>
-        </a>
-      </div>
-    </main>
+        </div>
+        <Image
+          src="/img/logo_salud_en_conexion.png"
+          alt="logo salud en conexión"
+          width={180}
+          height={180}
+        />
+      </footer>
+    </>
   );
 }

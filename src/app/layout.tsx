@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +13,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
+        <link
+          rel="stylesheet"
+          href="https://luisrrleal.com/styles/leal-styles.css"
+        />
+        <title>Salud en conexión</title>
+        <meta
+          name="description"
+          content="Es una iniciativa dedicadas a la salud que se esfuerzan en realizar una dinámica integral para ofrecer una opción económica y de la mejor calidad al alcance de todos sus pacientes."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="./img/favicon.png" rel="icon" />
+        <link
+          rel="shortcut icon"
+          href="img/logo_salud_en_conexion.png"
+          type="image/x-icon"
+        />
+        
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
