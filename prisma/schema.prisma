@@ -1,0 +1,33 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model Business {
+    businessId Int      @id @default(autoincrement())
+    name       String   @unique
+    createdAt  DateTime @default(now())
+
+    sentClicks     Click[] @relation("sentClicks")
+    receivedClicks Click[] @relation("receivedClicks")
+}
+
+model Click {
+    clickId Int @id @default(autoincrement())
+
+    createdAt DateTime @default(now())
+
+    // Relations about business that send a click to other business
+    fromBusinessId Int
+    fromBusiness   Business @relation("sentClicks", fields: [fromBusinessId], references: [businessId])
+
+    toBusinessId Int
+    toBusiness   Business @relation("receivedClicks", fields: [toBusinessId], references: [businessId])
+}
