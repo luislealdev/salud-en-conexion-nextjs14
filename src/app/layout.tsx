@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Footer, Header } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -37,9 +38,13 @@ export default function RootLayout({
           href="img/logo_salud_en_conexion.png"
           type="image/x-icon"
         />
-        
+
       </head>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
