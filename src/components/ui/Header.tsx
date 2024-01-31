@@ -3,18 +3,9 @@ import React from 'react'
 
 export const Header = () => {
   return (
-    <div className="info">
-    <h1>
-      SALUD EN <br /> CONEXIÓN
-    </h1>
-    <Image
-      src="/img/logo_salud_en_conexion.png"
-      alt="logo salud en conexión"
-      width={180}
-      height={180}
-    />
-    <h2 className="membresia">MEMBRESÍA</h2>
-    <h3 className="beneficios">BENEFICIOS</h3>
-  </div>
+    <header className='flex justify-content align-center gap-15 white-text bg-black p-40' id='header'>
+      <Image src='/img/logo_salud_en_conexion.png' alt='' className='auto-width' width={150} height={150} />
+      <h1 className='f-size-50'>SALUD EN<br />CONEXIÓN</h1>
+    </header>
   )
 }

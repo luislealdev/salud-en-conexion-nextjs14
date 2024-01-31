@@ -1,7 +1,7 @@
 export const business = [
     {
         name: "Visual Center",
-        promotion: "2x1",
+        promotion: "2X1",
         field: "Óptica",
         description: "En la compra de tus lentes te regalamos el segundo en armazones punto verde con graduación de serie 1",
         phoneNumber: "524613773679",
@@ -9,7 +9,7 @@ export const business = [
     },
     {
         name: "Centro de atencion psicologica Ser en Comunidad",
-        promotion: "Sesión psicológica",
+        promotion: "GRATIS",
         field: "Psicología",
         description: "Obten una sesión psicológica totalmente gratis",
         phoneNumber: "524611366142",
@@ -17,7 +17,7 @@ export const business = [
     },
     {
         name: "Dental Family",
-        promotion: "20% descuento",
+        promotion: "20%",
         field: "Rehabilitación Bucal",
         description: "20% de descuento en cualquier tratamiento",
         phoneNumber: "524611593426",
@@ -25,7 +25,7 @@ export const business = [
     },
     {
         name: "Orto Shalom",
-        promotion: "10% de descuento",
+        promotion: "10%",
         field: "Prótesis y rehabilitación",
         description: "10% de descuento en plantillas o órtesis.",
         phoneNumber: "524611149468",
@@ -33,7 +33,7 @@ export const business = [
     },
     {
         name: "Just",
-        promotion: "Terapia relajante",
+        promotion: "GRATIS",
         field: "Consultora independiente",
         description: "En la compra de un producto adquiere GRATIS una terapia relajante",
         phoneNumber: "524131015563",
@@ -41,7 +41,7 @@ export const business = [
     },
     {
         name: "Mar spa",
-        promotion: "Masaje facial",
+        promotion: "GRATIS",
         field: "Spa",
         description: "Obten un masaje facial relajante totalmente GRATIS",
         phoneNumber: "524611992838",
@@ -49,7 +49,7 @@ export const business = [
     },
     {
         name: "Sana nutricion",
-        promotion: "20% de descuento",
+        promotion: "20%",
         field: "Nutrición",
         description: "20% de descuento en tu diagnóstico de salud nutricional",
         phoneNumber: "524614610411",
@@ -57,7 +57,7 @@ export const business = [
     },
     {
         name: "Centro de Biosteopraxia y Biomagnetismo Medico",
-        promotion: "2x1",
+        promotion: "2X1",
         field: "Biostepráxia y biomagnetismo",
         description: "Obten 2 terapias pagando solo 1",
         phoneNumber: "525563571154",
@@ -65,7 +65,7 @@ export const business = [
     },
     {
         name: "Dettasli",
-        promotion: "25% de descuento",
+        promotion: "25%",
         field: "Maquillaje",
         description: "25% de descuento en ojos o cejas",
         phoneNumber: "524612271811",
@@ -73,7 +73,7 @@ export const business = [
     },
     {
         name: "Nutricion Canina",
-        promotion: "2x1",
+        promotion: "2X1",
         field: "Nutrición cruda",
         description: "2x1 a partir de 10 kilos en precio de lista. (Res y pollo)",
         phoneNumber: "524614671366",
