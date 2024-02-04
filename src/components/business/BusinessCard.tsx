@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link";
 import { FC } from "react";
+import { CallToActionButton } from "./CallToActionButton";
 
 interface Props {
     company: {
@@ -20,7 +21,8 @@ export const BusinessCard: FC<Props> = ({ company }) => {
                 <h3 className="f-size-70 gray-text">{company.promotion}</h3>
                 <p className="bold gray-text">{company.description}</p>
             </div>
-            <Link href='' className="f-size-18 p-20 bg-gray white-text radius-30">SOLICITAR AHORA</Link>
+
+            <CallToActionButton phone={company.phoneNumber} />
         </div>
     )
 }

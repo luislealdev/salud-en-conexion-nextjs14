@@ -15,7 +15,7 @@ export default function Home() {
           <BusinessCard key={company.name} company={company} />
         )};
       </div>
-      <p className="center-text mb-50 white-text">DESLIZA PARA VER MÁS <i className="fa-solid fa-arrow-right"></i>  </p>
+      <p className="center-text mb-50 white-text hide-on-mobile">DESLIZA PARA VER MÁS <i className="fa-solid fa-arrow-right"></i>  </p>
     </>
   );
 }

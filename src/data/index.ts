@@ -73,10 +73,9 @@ export const business = [
     },
     {
         name: "Ortopédica Ramos",
-        promotion: "20%",
+        promotion: "10%",
         field: "Ortopedia y rehabilitación",
-        // TODO: SOLO FALTA CAMBIAR LA DESCRIPCIÓN
-        description: "20% de descuento en tu diagnóstico de salud nutricional",
+        description: "10% de descuento en andadadderas",
         phoneNumber: "524616884376",
         logoSrc: "/img/business/logo-ortopedica-ramos.png",
     },
