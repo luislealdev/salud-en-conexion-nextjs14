@@ -1,5 +1,6 @@
 export const business = [
     {
+        id: 1,
         name: "Visual Center",
         promotion: "2X1",
         field: "Óptica",
@@ -8,6 +9,7 @@ export const business = [
         logoSrc: "/img/business/logo-visual-center.png",
     },
     {
+        id: 2,
         name: "Dental Family",
         promotion: "20%",
         field: "Rehabilitación Bucal",
@@ -16,6 +18,7 @@ export const business = [
         logoSrc: "/img/business/logo-dental-family.png",
     },
     {
+        id: 2,
         name: "Orto Shalom",
         promotion: "10%",
         field: "Prótesis y rehabilitación",
@@ -24,6 +27,7 @@ export const business = [
         logoSrc: "/img/business/logo-orto-shalom.png",
     },
     {
+        id: 3,
         name: "Just",
         promotion: "GRATIS",
         field: "Consultora independiente",
@@ -32,6 +36,7 @@ export const business = [
         logoSrc: "/img/business/logo-just.png",
     },
     {
+        id: 4,
         name: "Mar spa",
         promotion: "GRATIS",
         field: "Spa",
@@ -40,6 +45,7 @@ export const business = [
         logoSrc: "/img/business/logo-mar-spa.png",
     },
     {
+        id: 5,
         name: "Sana nutricion",
         promotion: "20%",
         field: "Nutrición",
@@ -48,6 +54,7 @@ export const business = [
         logoSrc: "/img/business/logo-sana-nutricion.png",
     },
     {
+        id: 6,
         name: "Centro de Biosteopraxia y Biomagnetismo Medico",
         promotion: "2X1",
         field: "Biostepráxia y biomagnetismo",
@@ -56,6 +63,7 @@ export const business = [
         logoSrc: "/img/business/logo-cbbm.png",
     },
     {
+        id: 7,
         name: "Dettasli",
         promotion: "25%",
         field: "Maquillaje",
@@ -64,6 +72,7 @@ export const business = [
         logoSrc: "/img/business/logo-dettasli.png",
     },
     {
+        id: 8,
         name: "Nutricion Canina",
         promotion: "2X1",
         field: "Nutrición cruda",
@@ -72,6 +81,7 @@ export const business = [
         logoSrc: "/img/business/logo-rojo.png",
     },
     {
+        id: 9,
         name: "Ortopédica Ramos",
         promotion: "10%",
         field: "Ortopedia y rehabilitación",
@@ -80,6 +90,7 @@ export const business = [
         logoSrc: "/img/business/logo-ortopedica-ramos.png",
     },
     {
+        id: 10,
         name: "Espacio Interno",
         promotion: "2X1",
         field: "Psicología, tanatología y transformación humana",
@@ -88,6 +99,7 @@ export const business = [
         logoSrc: "/img/business/logo-espacio-interno.png",
     },
     {
+        id: 11,
         name: "SENOCUP",
         promotion: "GRATIS",
         field: "Primeros auxilios",
@@ -96,6 +108,7 @@ export const business = [
         logoSrc: "/img/business/logo-senocup.png",
     },
     {
+        id: 12,
         name: "Dr. Francisco Medina",
         promotion: "20%",
         field: "Medicina estética",

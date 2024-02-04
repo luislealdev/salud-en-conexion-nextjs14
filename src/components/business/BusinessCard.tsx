@@ -5,6 +5,7 @@ import { CallToActionButton } from "./CallToActionButton";
 
 interface Props {
     company: {
+        id: number,
         name: string;
         logoSrc: string;
         promotion: string;
@@ -14,6 +15,9 @@ interface Props {
 }
 
 export const BusinessCard: FC<Props> = ({ company }) => {
+
+
+    
     return (
         <div className="center-text p-20 flex column gap-15 bg-white radius-30 align-center business-card space-between">
             <Image height={200} width={200} className="max-width mt-20" src={company.logoSrc} alt={company.name} />
@@ -22,7 +26,7 @@ export const BusinessCard: FC<Props> = ({ company }) => {
                 <p className="bold gray-text">{company.description}</p>
             </div>
 
-            <CallToActionButton phone={company.phoneNumber} />
+            <CallToActionButton phone={company.phoneNumber} fromBusinessId={1} toBusinessId={company.id} />
         </div>
     )
 }
