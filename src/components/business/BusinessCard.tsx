@@ -14,10 +14,12 @@ interface Props {
 
 export const BusinessCard: FC<Props> = ({ company }) => {
     return (
-        <div className="center-text p-20 flex column gap-15 bg-white radius-30 align-center" id="business-card">
-            <Image height={300} width={200} className="auto-height" src={company.logoSrc} alt={company.name} />
-            <h3 className="f-size-70 gray-text">{company.promotion}</h3>
-            <p className="bold gray-text">{company.description}</p>
+        <div className="center-text p-20 flex column gap-15 bg-white radius-30 align-center business-card space-between">
+            <Image height={200} width={200} className="max-width mt-20" src={company.logoSrc} alt={company.name} />
+            <div className="info">
+                <h3 className="f-size-70 gray-text">{company.promotion}</h3>
+                <p className="bold gray-text">{company.description}</p>
+            </div>
             <Link href='' className="f-size-18 p-20 bg-gray white-text radius-30">SOLICITAR AHORA</Link>
         </div>
     )

@@ -34,6 +34,43 @@ main {
   border-radius: 0 100px 0 0;
 }
 
-/* #business-card{
-  width: 40px;
-} */
+#business{
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.business-card{
+  flex-grow:10;
+  min-width:250px
+}
+
+@media (max-width: 500px) {
+  #business{
+    flex-direction: column;
+  }
+
+  #business .info{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .business-card .info h3{
+    font-size: 20px;
+  }
+
+  .business-card .info p{
+    text-align: left;
+    font-size: 13px;
+  }
+
+  .business-card a{
+    font-size: 13px;
+  }
+
+  .business-card{
+    min-width: 100px;
+  }
+}

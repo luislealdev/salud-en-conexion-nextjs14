@@ -8,14 +8,6 @@ export const business = [
         logoSrc: "/img/business/logo-visual-center.png",
     },
     {
-        name: "Centro de atencion psicologica Ser en Comunidad",
-        promotion: "GRATIS",
-        field: "Psicología",
-        description: "Obten una sesión psicológica totalmente gratis",
-        phoneNumber: "524611366142",
-        logoSrc: "/img/business/logo-ser-en-comunidad.png",
-    },
-    {
         name: "Dental Family",
         promotion: "20%",
         field: "Rehabilitación Bucal",
@@ -45,7 +37,7 @@ export const business = [
         field: "Spa",
         description: "Obten un masaje facial relajante totalmente GRATIS",
         phoneNumber: "524611992838",
-        logoSrc: "/img/business/logo-mar-spa.jpeg",
+        logoSrc: "/img/business/logo-mar-spa.png",
     },
     {
         name: "Sana nutricion",
@@ -79,4 +71,37 @@ export const business = [
         phoneNumber: "524614671366",
         logoSrc: "/img/business/logo-rojo.png",
     },
+    {
+        name: "Ortopédica Ramos",
+        promotion: "20%",
+        field: "Ortopedia y rehabilitación",
+        // TODO: SOLO FALTA CAMBIAR LA DESCRIPCIÓN
+        description: "20% de descuento en tu diagnóstico de salud nutricional",
+        phoneNumber: "524616884376",
+        logoSrc: "/img/business/logo-ortopedica-ramos.png",
+    },
+    {
+        name: "Espacio Interno",
+        promotion: "2X1",
+        field: "Psicología, tanatología y transformación humana",
+        description: "En sesión inicial",
+        phoneNumber: "524611293861",
+        logoSrc: "/img/business/logo-espacio-interno.png",
+    },
+    {
+        name: "SENOCUP",
+        promotion: "GRATIS",
+        field: "Primeros auxilios",
+        description: "Un miembro entra gratis en capacitaciones de primeros auxilios ⛑️",
+        phoneNumber: "524121776533",
+        logoSrc: "/img/business/logo-senocup.png",
+    },
+    {
+        name: "Dr. Francisco Medina",
+        promotion: "20%",
+        field: "Medicina estética",
+        description: "Descuento en relleno de labios todo febrero",
+        phoneNumber: "524612523221",
+        logoSrc: "/img/business/logo-francisco-medina.png",
+    }
 ];

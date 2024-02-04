@@ -10,7 +10,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex p-40" style={{ gap: 50 }}>
+      <div className="flex p-40" style={{ gap: 50 }} id="business">
         {business.map((company) =>
           <BusinessCard key={company.name} company={company} />
         )};
