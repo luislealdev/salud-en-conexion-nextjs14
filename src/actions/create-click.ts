@@ -14,6 +14,7 @@ export const createClick = async (fromBusinessId: number, toBusinessId: number) 
         return {
             ok: true
         }
+
     } catch (error) {
         console.log(error);
 
@@ -22,5 +23,4 @@ export const createClick = async (fromBusinessId: number, toBusinessId: number) 
             error: error
         }
     }
-
 }

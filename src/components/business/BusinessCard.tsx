@@ -11,13 +11,12 @@ interface Props {
         promotion: string;
         description: string;
         phoneNumber: string;
-    }
+    },
+    from: number
 }
 
-export const BusinessCard: FC<Props> = ({ company }) => {
+export const BusinessCard: FC<Props> = ({ company, from }) => {
 
-
-    
     return (
         <div className="center-text p-20 flex column gap-15 bg-white radius-30 align-center business-card space-between">
             <Image height={200} width={200} className="max-width mt-20" src={company.logoSrc} alt={company.name} />
@@ -26,7 +25,7 @@ export const BusinessCard: FC<Props> = ({ company }) => {
                 <p className="bold gray-text">{company.description}</p>
             </div>
 
-            <CallToActionButton phone={company.phoneNumber} fromBusinessId={1} toBusinessId={company.id} />
+            <CallToActionButton phone={company.phoneNumber} fromBusinessId={from} toBusinessId={company.id} />
         </div>
     )
 }

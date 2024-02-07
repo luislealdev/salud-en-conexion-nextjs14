@@ -6,6 +6,9 @@ export const CallToActionButton = ({ phone, fromBusinessId, toBusinessId }: { ph
 
     const handleClick = async () => {
         await createClick(fromBusinessId, toBusinessId);
+
+        // Send to whatsapp and add the text 'Me gustaría tomar '
+        window.open(`https://api.whatsapp.com/send?phone=${phone}&text=¡Hola!,%20me%20gustaría%20la%20promoción%20que%20ofrece.`);
     }
 
     return (

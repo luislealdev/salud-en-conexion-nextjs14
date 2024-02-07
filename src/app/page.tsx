@@ -1,6 +1,7 @@
 import { BusinessCard } from "@/components";
 import { business } from "@/data";
 
+
 export default function Home() {
   return (
     <>
@@ -12,10 +13,11 @@ export default function Home() {
 
       <div className="flex p-40" style={{ gap: 50 }} id="business">
         {business.map((company) =>
-          <BusinessCard key={company.name} company={company} />
+          <BusinessCard from={1} key={company.name} company={company} />
         )};
       </div>
       <p className="center-text mb-50 white-text hide-on-mobile">DESLIZA PARA VER MÁS <i className="fa-solid fa-arrow-right"></i>  </p>
     </>
   );
-}
+};
+
