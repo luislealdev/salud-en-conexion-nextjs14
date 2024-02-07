@@ -2,6 +2,7 @@ import { BusinessCard } from "@/components";
 import { business } from "@/data";
 import { getBusinessBySlug } from "@/utils/getBusinessBySlug";
 import { notFound } from "next/navigation";
+import { Desplacing } from "./ui/Desplacing";
 
 interface Props {
     params: {
@@ -12,7 +13,7 @@ interface Props {
 const BusinessPage = async ({ params }: Props) => {
 
     const businesPageInfo = getBusinessBySlug(params.business);
-    
+
     if (!businesPageInfo) notFound();
 
     return (
@@ -23,11 +24,7 @@ const BusinessPage = async ({ params }: Props) => {
                 </div>
             </div>
 
-            <div className="flex p-40" style={{ gap: 50 }} id="business">
-                {business.map((company) =>
-                    <BusinessCard key={company.name} from={businesPageInfo.id} company={company} />
-                )};
-            </div>
+            <Desplacing businesPageInfo={businesPageInfo} />
             <p className="center-text mb-50 white-text hide-on-mobile">DESLIZA PARA VER MÁS <i className="fa-solid fa-arrow-right"></i>  </p>
         </>
     )

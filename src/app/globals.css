@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@200;500;700&display=swap");
 
-// Add new font
 @font-face {
   font-family: "Now-Bold";
   src: url("/fonts/Now-Bold.otf") format("otf");
