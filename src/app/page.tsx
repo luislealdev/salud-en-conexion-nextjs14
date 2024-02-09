@@ -66,7 +66,7 @@ const Home: React.FC = () => {
         DESLIZA PARA VER MÁS <i className="fa-solid fa-arrow-right"></i>
       </p>
     </>
-  );
+  )
 };
 
 export default Home;

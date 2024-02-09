@@ -1,5 +1,3 @@
-import { BusinessCard } from "@/components";
-import { business } from "@/data";
 import { getBusinessBySlug } from "@/utils/getBusinessBySlug";
 import { notFound } from "next/navigation";
 import { Desplacing } from "./ui/Desplacing";
