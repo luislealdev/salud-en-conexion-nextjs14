@@ -95,7 +95,7 @@ export const business = [
         slug: 'ortopedica-ramos',
         promotion: "10%",
         field: "Ortopedia y rehabilitación",
-        description: "10% de descuento en andadadderas",
+        description: "10% de descuento en andadaderas",
         phoneNumber: "524616884376",
         logoSrc: "/img/business/logo-ortopedica-ramos.png",
     },
